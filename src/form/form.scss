@@ -1,4 +1,4 @@
-body {
+.page {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f5f5;
   margin: 0;
@@ -7,73 +7,97 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+  &__container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 .container {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
+  &__title {
+    text-align: center;
+    color: #9b59b6;
+    margin-bottom: 1.5rem;
+  }
+
+  &__form {
+    // Форма наследует стили .form
+  }
 }
 
-h1 {
-  text-align: center;
-  color: #9b59b6;
-  margin-bottom: 1.5rem;
-}
+.form {
+  &__group {
+    margin-bottom: 1rem;
 
-.form-group {
-  margin-bottom: 1rem;
-}
+    &--flex {
+      display: flex;
+      align-items: center;
+    }
+  }
 
-.form-group.flex-group {
-  display: flex;
-}
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
 
-.form-group.flex-group label {
-  margin-bottom: 0;
-}
+    &--inline {
+      display: inline;
+      margin-bottom: 0;
+    }
+  }
 
-label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #555;
-}
+  &__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
+    &[type="text"],
+    &[type="email"],
+    &[type="password"] {
+      // Дополнительные стили для конкретных типов
+    }
+  }
+
+  &__radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  &__checkbox {
+    margin-right: 0.5rem;
+  }
+
+  &__submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #8e44ad;
+    }
+  }
 }
 
 .radio-group {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
+  &__input {
+    // Стили для радио-кнопок
+  }
 
-input[type="checkbox"] {
-  margin-right: 0.5rem;
-}
-
-.submit-btn {
-  width: 100%;
-  padding: 12px;
-  background-color: #9b59b6;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-  background-color: #8e44ad;
+  &__label {
+    // Стили для лейблов радио-кнопок
+  }
 }

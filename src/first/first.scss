@@ -1,4 +1,4 @@
-body {
+.page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,20 +8,22 @@ body {
   padding: 0;
   height: 100vh;
   color: #333;
+
+  &__container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .container {
-  text-align: center;
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  &__title {
+    color: #2c3e50;
+  }
 
-h1 {
-  color: #2c3e50;
-}
-
-p {
-  color: #7f8c8d;
+  &__text {
+    color: #7f8c8d;
+  }
 }

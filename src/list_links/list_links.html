@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <title>Мои любимые фильмы</title>
 </head>
-<body>
-<div class="container">
-    <h1>Мои любимые фильмы</h1>
+<body class="page">
+<div class="page__container container">
+    <h1 class="container__title">Мои любимые фильмы</h1>
 
-    <div class="list-section">
-        <h2>Топ-3 фильма:</h2>
-        <ol class="top-list">
-            <li>Начало (Inception)</li>
-            <li>Интерстеллар (Interstellar)</li>
-            <li>Побег из Шоушенка (The Shawshank Redemption)</li>
+    <div class="container__section section">
+        <h2 class="section__heading">Топ-3 фильма:</h2>
+        <ol class="section__list section__list--numbered">
+            <li class="section__item">Начало (Inception)</li>
+            <li class="section__item">Интерстеллар (Interstellar)</li>
+            <li class="section__item">Побег из Шоушенка (The Shawshank Redemption)</li>
         </ol>
     </div>
 
-    <div class="list-section">
-        <h2>Жанры:</h2>
-        <ul class="genre-list">
-            <li>Фантастика</li>
-            <li>Драма</li>
-            <li>Триллер</li>
+    <div class="container__section section">
+        <h2 class="section__heading">Жанры:</h2>
+        <ul class="section__list section__list--marked">
+            <li class="section__item">Фантастика</li>
+            <li class="section__item">Драма</li>
+            <li class="section__item">Триллер</li>
         </ul>
     </div>
 
-    <div class="links-section">
-        <h2>Где посмотреть?</h2>
-        <ul class="links-list">
-            <li><a href="https://www.netflix.com" target="_blank">Netflix</a></li>
-            <li><a href="https://www.kinopoisk.ru" target="_blank">Кинопоиск</a></li>
-            <li><a href="https://www.ivi.ru" target="_blank">IVI</a></li>
+    <div class="container__section section">
+        <h2 class="section__heading">Где посмотреть?</h2>
+        <ul class="section__list section__list--links">
+            <li class="section__item">
+                <a class="section__link" href="https://www.netflix.com" target="_blank">Netflix</a>
+            </li>
+            <li class="section__item">
+                <a class="section__link" href="https://www.kinopoisk.ru" target="_blank">Кинопоиск</a>
+            </li>
+            <li class="section__item">
+                <a class="section__link" href="https://www.ivi.ru" target="_blank">IVI</a>
+            </li>
         </ul>
     </div>
 </div>

@@ -4,41 +4,43 @@
     <meta charset="UTF-8">
     <title>Моё расписание</title>
 </head>
-<body>
-<div class="container">
-    <h1>Моё расписание</h1>
+<body class="page">
+<div class="page__container container">
+    <h1 class="container__title">Моё расписание</h1>
 
-    <table>
-        <thead>
-        <tr>
-            <th>День недели</th>
-            <th>Время</th>
-            <th>Занятие</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Понедельник</td>
-            <td>9:00</td>
-            <td>Учёба</td>
-        </tr>
-        <tr>
-            <td>Вторник</td>
-            <td>10:00</td>
-            <td>Спорт</td>
-        </tr>
-        <tr>
-            <td>Среда</td>
-            <td>14:00</td>
-            <td>Работа</td>
-        </tr>
-        <tr>
-            <td>Четверг</td>
-            <td>18:00</td>
-            <td>Отдых</td>
-        </tr>
-        </tbody>
-    </table>
+    <div class="container__schedule schedule">
+        <table class="schedule__table">
+            <thead class="schedule__header">
+            <tr class="schedule__row">
+                <th class="schedule__cell schedule__cell--header">День недели</th>
+                <th class="schedule__cell schedule__cell--header">Время</th>
+                <th class="schedule__cell schedule__cell--header">Занятие</th>
+            </tr>
+            </thead>
+            <tbody class="schedule__body">
+            <tr class="schedule__row schedule__row--even">
+                <td class="schedule__cell">Понедельник</td>
+                <td class="schedule__cell">9:00</td>
+                <td class="schedule__cell">Учёба</td>
+            </tr>
+            <tr class="schedule__row schedule__row--odd">
+                <td class="schedule__cell">Вторник</td>
+                <td class="schedule__cell">10:00</td>
+                <td class="schedule__cell">Спорт</td>
+            </tr>
+            <tr class="schedule__row schedule__row--even">
+                <td class="schedule__cell">Среда</td>
+                <td class="schedule__cell">14:00</td>
+                <td class="schedule__cell">Работа</td>
+            </tr>
+            <tr class="schedule__row schedule__row--odd">
+                <td class="schedule__cell">Четверг</td>
+                <td class="schedule__cell">18:00</td>
+                <td class="schedule__cell">Отдых</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 </body>
 </html>

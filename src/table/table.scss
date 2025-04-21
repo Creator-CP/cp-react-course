@@ -1,47 +1,60 @@
-body {
+.page {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   margin: 0;
   padding: 2rem;
   color: #333;
+
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &__title {
+    text-align: center;
+    color: #27ae60;
+    margin-bottom: 1.5rem;
+  }
+
+  &__schedule {
+    margin-top: 1rem;
+  }
 }
 
-h1 {
-  text-align: center;
-  color: #27ae60;
-  margin-bottom: 1.5rem;
-}
+.schedule {
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
+  &__row {
+    &:hover {
+      background-color: #e3f2fd;
+    }
 
-th, td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
+    &--even {
+      background-color: #f2f2f2;
+    }
 
-th {
-  background-color: #2ecc71;
-  color: white;
-}
+    &--odd {
+      background-color: white;
+    }
+  }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
+  &__cell {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 
-tr:hover {
-  background-color: #e3f2fd;
+    &--header {
+      background-color: #2ecc71;
+      color: white;
+    }
+  }
 }
