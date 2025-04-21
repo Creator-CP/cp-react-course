@@ -1,0 +1,32 @@
+{
+  "name": "cp-react-course",
+  "version": "1.0.0",
+  "description": "cp-react",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.86.3",
+    "sass-loader": "^16.0.5",
+    "webpack-cli": "^6.0.1",
+    "webpack": "^5.99.5",
+    "webpack-dev-server": "^5.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creator-CP/cp-react-course.git"
+  },
+  "keywords": [
+    "react-cp"
+  ],
+  "author": "mzhuravlev",
+  "license": "ISC"
+}
