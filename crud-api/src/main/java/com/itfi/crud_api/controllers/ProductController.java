@@ -21,12 +21,14 @@ public class ProductController {
     private CategoryRepository categoryRepository;
 
     @GetMapping
+    @CrossOrigin(origins = "*")
     public ResponseEntity<List<Product>> getAllProducts() {
         List<Product> products = productRepository.findAll();
         return ResponseEntity.ok(products);
     }
 
     @GetMapping("/{id}")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<Product> getProductById(@PathVariable Long id) {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Product not found"));
@@ -34,6 +36,7 @@ public class ProductController {
     }
 
     @GetMapping("/category/{categoryId}")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<List<Product>> getProductsByCategory(@PathVariable Long categoryId) {
         if (!categoryRepository.existsById(categoryId)) {
             throw new ResourceNotFoundException("Category not found");
@@ -44,6 +47,7 @@ public class ProductController {
     }
 
     @GetMapping("/search")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<List<Product>> searchProducts(@RequestParam String query) {
         List<Product> products = productRepository.findByNameContainingIgnoreCase(query);
         return ResponseEntity.ok(products);
